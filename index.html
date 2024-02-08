@@ -1,0 +1,3970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Order App</title>
+  
+    
+</head>
+<body>
+ 
+
+    <div id="cart-container" class="screen-cart screen-cart-container">
+        <h2>Your Order</h2>
+        <div class="cart-items" id="cart-items">
+        </div>
+        <div class="cart-math">
+        </div>
+      </div>
+        
+        <div class="cart-math" id="cart-math">
+            <template id="cartItem">
+                <div class="cart-item-container" data-cost="${price}">
+                    <div class="cart-item-heading"></div><div><span class="j">£</span><span class='price-value'></span></div><button type="button" class="delete">X</button></div>
+                </div>
+                </template>
+                <template id="cartTotal">
+                  <div class="total-container">
+                    <div class="cart-math-item">
+                    <span class="cart-math-header">Subtotal:</span>
+                    <span class="g-price subtotal">£<span class="subtotal-value"></span>
+                       </span>
+                    </div>
+                    <div class="cart-math-item">
+                    <span class="cart-math-header">Service Charge(12%):</span>
+                    <span class="g-price tax">£<span class="tax-value"></span></span>
+                    </div>
+                    <div class="cart-math-item">
+                    <span class="cart-math-header">Total:</span>
+                    <span class="g-price total">£<span class="total-value"></span></span>
+                      </div>
+                  </div>
+                </template>
+    </div>
+
+     <div id="cart-container" class="screen-cart screen-cart-container">
+        <h2>Your Order</h2>
+        <div class="cart-items" id="cart-items">
+        </div>
+        <div class="cart-math">
+        </div>
+      </div>
+        
+        <div class="cart-math" id="cart-math">
+            <template id="cartItem">
+                <div class="cart-item-container" data-cost="${price}">
+                    <div class="cart-item-heading"></div><div><span class="j">£</span><span class='price-value'></span></div><button type="button" class="delete">X</button></div>
+                </div>
+                </template>
+                <template id="cartTotal">
+                  <div class="total-container">
+                    <div class="cart-math-item">
+                    <span class="cart-math-header">Subtotal:</span>
+                    <span class="g-price subtotal">£<span class="subtotal-value"></span>
+                       </span>
+                    </div>
+                    <div class="cart-math-item">
+                    <span class="cart-math-header">Service Charge(12%):</span>
+                    <span class="g-price tax">£<span class="tax-value"></span></span>
+                    </div>
+                    <div class="cart-math-item">
+                    <span class="cart-math-header">Total:</span>
+                    <span class="g-price total">£<span class="total-value"></span></span>
+                      </div>
+                  </div>
+                </template>
+    </div>
+    
+   
+    
+<div class="btn-group">
+ 
+  <div style="background-color: #4CAF50"
+  class="show" id="show">Bread & Nibbles</div>
+  <dialog class="bread" id="smallFrame">
+
+    <button class='hide' id="hide" style="background-color: #4CAF50">Close</button>
+
+    <div class="bread" id="subject" >
+     
+        <div style="background-color: #4CAF50"
+        class="show-70"id="show">Dough Petals</div>
+        <dialog class="petals"id="smallFrame">
+      
+          <button class='hide-70' id="hide" style="background-color: #4CAF50">Close</button>
+      <div class="Petals"id="subject">
+  
+            
+      
+    <button 
+        class="btn food-item"
+        type="button" 
+        style="background-color: #4CAF50" 
+        data-title="Garlic Petals" 
+        data-price="5.95">Garlic
+       
+    </button>
+    
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #4CAF50" 
+        data-title="Tomato Petals" 
+        data-price="5.95">Tomato 
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"   
+        style="background-color: #4CAF50"
+        data-title="Pork Petals" 
+        data-price="6.55">Pork 
+    </button>
+      </div>
+</dialog>
+
+<div style="background-color: #4CAF50"
+class="show-71"id="show">Garlic Bread</div>
+<dialog class="gBread"id="smallFrame">
+
+  <button class='hide-71' id="hide" style="background-color: #4CAF50">Close</button>
+<div class="gBread"id="subject">
+
+    <button  
+        class="btn food-item"
+        type="button"
+        style="background-color: #4CAF50"
+        data-title="Rosemary GB" 
+        data-price="5.95">Rosemary 
+    </button>
+    <button 
+        class="btn food-item"
+        type="button" 
+        style="background-color: #4CAF50"
+        data-title="Tomato GB" 
+        data-price="6.45">Tomato 
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #4CAF50"
+        data-title="Mozzerella GB" 
+        data-price="6.95">Mozzerella 
+    </button>
+</div>
+</dialog>
+
+    <button 
+        class="btn food-item"
+        type="button" 
+        style="background-color: #4CAF50"
+        data-title="Olives" 
+        data-price="4.95">Olives
+    </button>
+    <button 
+        class="btn food-item"
+        type="button" 
+        style="background-color: #4CAF50"
+        data-title="Bruschetta" 
+        data-price="5.95">Bruschetta
+    </button>
+    <button 
+        class="btn food-item"
+        type="button" 
+        style="background-color: #4CAF50"
+        data-title="Focaccia Bread" 
+        data-price="4.45">Focaccia Bread
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #4CAF50"
+        data-title="Houmous" 
+        data-price="5.75">Houmous
+    </button>
+    
+    </div>
+  </dialog>
+ 
+<div style="background-color: #fa2c0d"
+  class="show-2"id="show">Starters</div>
+  <dialog class="starters"id="smallFrame">
+
+    <button class='hide-2' id="hide" style="background-color: #fa2c0d">Close</button>
+<div class="starters"id="subject">
+
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #fa2c0d"
+        data-title="Calamari" 
+        data-price="9.75">Calamari
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #fa2c0d"
+        data-title="King Prawns" 
+        data-price="10.75">King Prawns
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #fa2c0d"
+        data-title="Chicken Pate" 
+        data-price="8.95">Chicken Pate
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #fa2c0d"
+        data-title="Burrata" 
+        data-price="9.95">Burrata
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #fa2c0d"
+        data-title="Antipasti" 
+        data-price="19.95">Antipasti
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #fa2c0d"
+        data-title="Panzanella" 
+        data-price="7.25">Panzanella
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #fa2c0d"
+        data-title="Scallops" 
+        data-price="14.95">Scallops
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #fa2c0d"
+        data-title="Lemon Prawns" 
+        data-price="24.95">Lemon Prawns
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #fa2c0d"
+        data-title="Meatballs" 
+        data-price="8.95">Meatballs
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #fa2c0d"
+        data-title="Vegan Meatballs" 
+        data-price="8.95">Vegan Meatballs
+    </button>
+    </div>
+    </dialog>
+
+   
+  <div style="background-color: #edb90f"
+  class="show-3"id="show">Mains</div>
+  <dialog class="mains"id="smallFrame">
+
+    <button class='hide-3'id="hide" style="background-color: #edb90f">Close</button>
+    <div class="mains"id="subject">
+
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #edb90f"
+        data-title="Duck" 
+        data-price="21.95">Duck
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #edb90f"
+        data-title="Chicken" 
+        data-price="18.95">Chicken
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #edb90f"
+        data-title="Salmon Fillet" 
+        data-price="19.95">Salmon Fillet
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #edb90f"
+        data-title="Orzotto" 
+        data-price="12.95">Orzotto
+    </button>
+
+    <div style="background-color: #edb90f"
+class="show-72"id="show">Vegan Burger</div>
+<dialog class="vBurger"id="smallFrame">
+
+  <button class='hide-72' id="hide" style="background-color: #edb90f">Close</button>
+<div class="vBurger"id="subject">
+
+    <div style="background-color: #edb90f"
+    class="show-73"id="show"> Vegan Cheese</div>
+    <dialog class="vBurgerCheese"id="smallFrame">
+    
+      <button class='hide-73' id="hide" style="background-color: #edb90f">Close</button>
+    <div class="vBurgerCheese"id="subject">
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #edb90f"
+        data-title="V Burger(Cheese/Plain Fries)" 
+        data-price="15.45">Plain Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #edb90f"
+        data-title="V Burger(Cheese/Skin Fries)" 
+        data-price="15.45">Skin Fries
+</button>
+<button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #edb90f"
+        data-title="V Burger(Cheese/Truff Fries)" 
+        data-price="15.45">Truffle Fries
+</button>
+    </div>
+</dialog>
+
+<div style="background-color: #edb90f"
+    class="show-74"id="show">No V Cheese</div>
+    <dialog class="vBurgerNoCheese"id="smallFrame">
+    
+      <button class='hide-74' id="hide" style="background-color: #edb90f">Close</button>
+    <div class="vBurgerNoCheese"id="subject">
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #edb90f"
+        data-title="V Burger(No C/Plain Fries)" 
+        data-price="15.45">Plain Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #edb90f"
+        data-title="V Burger(No C/Skin Fries)" 
+        data-price="15.45">Skin Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #edb90f"
+        data-title="V Burger(No C/Truffle Fries)" 
+        data-price="15.45">Truffle Fries
+    </button>
+    </div>
+</dialog>
+</dialog>
+
+
+    <div style="background-color: #edb90f"
+    class="show-75"id="show">Classic Burger</div>
+    <dialog class="cBurger"id="smallFrame">
+    
+      <button class='hide-75' id="hide" style="background-color: #edb90f">Close</button>
+
+    <div class="cBurger"id="subject">
+        <div style="background-color: #edb90f"
+        class="show-76"id="show"> Cheese</div>
+        <dialog class="cheeseBurger"id="smallFrame">
+        
+          <button class='hide-76' id="hide" style="background-color: #edb90f">Close</button>
+        <div class="cheeseBurger"id="subject">
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #edb90f"
+        data-title="Class Burger(Cheese/Pl Fries)" 
+        data-price="15.45">Plain Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #edb90f"
+        data-title="Classic Burger(Cheese/Skin Fries)" 
+        data-price="15.45">Skin Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #edb90f"
+        data-title="Classic Burger(Cheese/Truffle Fries)" 
+        data-price="15.45">Truffle Fries
+    </button>
+        </div>
+    
+    </dialog>
+
+    <div class="noCBurger"id="subject">
+        <div style="background-color: #edb90f"
+        class="show-77"id="show">No Cheese</div>
+        <dialog class="noCheeseBurger"id="smallFrame">
+        
+          <button class='hide-77' id="hide" style="background-color: #edb90f">Close</button>
+        <div class="noCheeseBurger"id="subject">
+
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #edb90f"
+            data-title="Classic Burger(No Cheese/Plain Fries)" 
+            data-price="15.45">Plain Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #edb90f"
+            data-title="Classic Burger(No Cheese/Skin Fries)" 
+            data-price="15.45">Skin Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #edb90f"
+            data-title="Classic Burger(No Cheese/Truffle Fries)" 
+            data-price="15.45">Truffle Fries
+        </button>
+        </div>
+    </div>
+        </dialog>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #edb90f"
+        data-title="Sea Bass" 
+        data-price="16.95">Sea Bass
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #edb90f"
+        data-title="Tuna" 
+        data-price="22.95">Tuna
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #edb90f"
+        data-title="Whole Sea Bream" 
+        data-price="49.95">Whole Sea Bream
+    </button>
+     </div>
+  </dialog>
+  
+
+  <div style="background-color: #f613e3"
+  class="show-4"id="show">Pizza</div>
+  <dialog class="pizza"id="smallFrame">
+
+    <button class='hide-4'id="hide" style="background-color: #f613e3">Close</button>
+<div class="pizza"id="subject">
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f613e3"
+        data-title="Margherita Pizza" 
+        data-price="11.95">Margherita
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f613e3"
+        data-title ="Truffle Bianco Pizza" 
+        data-price="14.75">Truffle Bianco
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f613e3"
+        data-title="Pepperoni Pizza" 
+        data-price="14.95">Pepperoni
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f613e3"
+        data-title="Griffino Pizza" 
+        data-price="15.25">Griffino
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f613e3"
+        data-title="Carnivoro Pizza" 
+        data-price="15.95">Carnivoro
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f613e3"
+        data-title="Caprino Pizza" 
+        data-price="15.95">Caprino
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f613e3"
+        data-title="Vegan Rosso Pizza" 
+        data-price="12.95">Vegan Rosso
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f613e3"
+        data-title="Nduja Pizza" 
+        data-price="14.95">Nduja
+    </button>
+    </div>
+    </dialog>
+    
+
+    <div style="background-color: #033c03"
+  class="show-5"id="show">Pasta & Risotto</div>
+  <dialog class="pasta"id="smallFrame">
+
+    <button class='hide-5'id="hide"  style="background-color: #033c03">Close</button>
+<div class="pasta"id="subject">
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #033c03"
+        data-title="Carbonara" 
+        data-price="14.95">Carbonara
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #033c03"
+        data-title="Mushroom Fettucini" 
+        data-price="14.95">Mushroom Fettucini
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #033c03"
+        data-title="Prosecco Risotto" 
+        data-price="14.95">Prosecco Risotto
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #033c03"
+        data-title="Fettuccine Ragu" 
+        data-price="14.95">Fettuccine Ragu
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #033c03"
+        data-title="Lasagne" 
+        data-price="14.95">Lasagne
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #033c03"
+        data-title="Scallop Ravioli" 
+        data-price="19.95">Scallop Ravioli
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #033c03"
+        data-title="Rigatoni Arrabbiata" 
+        data-price="12.95">Rigatoni Arrabbiata
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #033c03"
+        data-title="Prawn Bucatini" 
+        data-price="16.95">Prawn Bucatini
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #033c03"
+        data-title="Crab Fettucini" 
+        data-price="12.95">Crab Fettucini
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #033c03"
+        data-title="Truffle Ravioli" 
+        data-price="14.95">Truffle Ravioli
+    </button>
+</div>
+  </dialog>
+
+  <div style="background-color: #3f3e3f"
+  class="show-6"id="show">Steaks</div>
+  <dialog class="steaks"id="smallFrame">
+
+    <button class='hide-6'id="hide" style="background-color: #3f3e3f">Close</button>
+<div class="steaks"id="subject">
+
+    <div style="background-color: #3f3e3f"
+    class="show-7" id="show">Steak Experience</div>
+    <dialog class="steakExperience" id="smallFramede">
+        <button class='hide-7'id="hide" style="background-color: #3f3e3f">Close</button>
+        
+        <div class="steakexblue"id="subject">
+            <div style="background-color: #3f3e3f"
+            class="show-78"id="show">Blue</div>
+            <dialog class="steakExBlue"id="smallFrame">
+            
+              <button class='hide-78' id="hide" style="background-color: #3f3e3f">Close</button>
+            <div class="steakExBlue"id="subject">
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Blue/Plain Fries)" 
+        data-price="99.99">Plain Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Blue/Skin Fries)" 
+        data-price="99.99">Skin Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Blue/Truffle Fries)" 
+        data-price="99.99">Truffle Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Blue/Mash)" 
+        data-price="99.99">Mash
+    </button>
+    
+            </div>
+            </dialog>
+
+            <div class="steakexrare"id="subject">
+            <div style="background-color: #3f3e3f"
+            class="show-79"id="show">Rare</div>
+            <dialog class="steakExRare"id="smallFrame">
+                
+            <button class='hide-79' id="hide" style="background-color: #3f3e3f">Close</button>
+            <div class="steakExRare"id="subject">
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Rare/Plain Fries)" 
+        data-price="99.99">Plain Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Rare/Skin Fries)" 
+        data-price="99.99">Skin Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Rare/Truffle Fries)" 
+        data-price="99.99">Truffle Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Rare/Mash)" 
+        data-price="99.99">Mash
+    </button>
+        
+        </div>
+    </dialog>
+
+            <div class="steakexraremed"id="subject">
+            <div style="background-color: #3f3e3f"
+            class="show-80"id="show">Rare/Med</div>
+            <dialog class="steakExRareMed"id="smallFrame">
+                        
+            <button class='hide-80' id="hide" style="background-color: #3f3e3f">Close</button>
+            <div class="steakExRareMed"id="subject">
+
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Rare-Med/Plain Fries)" 
+        data-price="99.99">Plain Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Rare-Med/Skin Fries)" 
+        data-price="99.99">Skin Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Rare-Med/Truffle Fries)" 
+        data-price="99.99">Truffle Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Rare-Med/Mash)" 
+        data-price="99.99">Mash
+    </button>
+        </div>
+        </dialog>   
+
+        <div class="steakexraremed"id="subject">
+            <div style="background-color: #3f3e3f"
+            class="show-81"id="show">Medium</div>
+            <dialog class="steakExMed"id="smallFrame">
+                        
+            <button class='hide-81' id="hide" style="background-color: #3f3e3f">Close</button>
+            <div class="steakExMed"id="subject">
+
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Medium/Plain Fries)" 
+        data-price="99.99">Plain Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Medium/Skin Fries)" 
+        data-price="99.99">Skin Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Medium/Truffle Fries)" 
+        data-price="99.99">Truffle Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Medium/Mash)" 
+        data-price="99.99">Mash
+    </button>
+        </div>
+        </dialog>  
+
+        <div class="steakexraremedwel"id="subject">
+            <div style="background-color: #3f3e3f"
+            class="show-82"id="show">Med/Well</div>
+            <dialog class="steakExMedWel"id="smallFrame">
+                        
+            <button class='hide-82' id="hide" style="background-color: #3f3e3f">Close</button>
+            <div class="steakExMedWel"id="subject">
+
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Med-Well/Plain Fries)" 
+        data-price="99.99">Plain Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Med-Well/Skin Fries)" 
+        data-price="99.99">Skin Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Med-Well/Truffle Fries)" 
+        data-price="99.99">Truffle Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(Med-Well/Mash)" 
+        data-price="99.99">Mash
+    </button>
+        </div>
+        </dialog>    
+
+        <div class="steakexrarewel"id="subject">
+            <div style="background-color: #3f3e3f"
+            class="show-83"id="show">Well Done</div>
+            <dialog class="steakExWel"id="smallFrame">
+                        
+            <button class='hide-83' id="hide" style="background-color: #3f3e3f">Close</button>
+            <div class="steakExWel"id="subject">
+
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(WellDone/Plain Fries)" 
+        data-price="99.99">Plain Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(WellDone/Skin Fries)" 
+        data-price="99.99">Skin Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(WellDone/Truffle Fries)" 
+        data-price="99.99">Truffle Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Steak Experience(WellDone/Mash)" 
+        data-price="99.99">Mash
+    </button>
+        </div>
+        </dialog>      
+</dialog>
+
+    <div style="background-color: #3f3e3f"
+    class="show-8" id="show">Chateaubriand</div>
+    <dialog class="chateaubriand" id="smallFramede">
+        <button class='hide-8'id="hide" style="background-color: #3f3e3f">Close</button>
+
+        <div class="chateaublue"id="subject">
+            <div style="background-color: #3f3e3f"
+            class="show-84"id="show">Blue</div>
+            <dialog class="chateauBlue"id="smallFrame">
+                        
+            <button class='hide-84' id="hide" style="background-color: #3f3e3f">Close</button>
+            <div class="chateauBlue"id="subject">
+
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Chateaubriand(Blue/Plain Fries)" 
+        data-price="69.95">Plain Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Chateaubriand(Blue/Skin Fries)" 
+        data-price="69.95">Skin Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Chateaubriand(Blue/Truffle Fries)" 
+        data-price="69.95">Truffle Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Chateaubriand(Blue/Mash)" 
+        data-price="69.95">Mash
+    </button>
+            </div>
+            </dialog>
+
+        
+
+        <div class="chateaurare"id="subject">
+            <div style="background-color: #3f3e3f"
+            class="show-85"id="show">Rare</div>
+            <dialog class="chateauRare"id="smallFrame">
+                        
+            <button class='hide-85' id="hide" style="background-color: #3f3e3f">Close</button>
+            <div class="chateauRare"id="subject">
+
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Chateaubriand(Rare/Plain Fries)" 
+        data-price="69.95">Plain Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Chateaubriand(Rare/Skin Fries)" 
+        data-price="69.95">Skin Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Chateaubriand(Rare/Truffle Fries)" 
+        data-price="69.95">Truffle Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Chateaubriand(Rare/Mash)" 
+        data-price="69.95">Mash
+    </button>
+            </div>
+            </dialog>
+
+            <div class="chateauraremed"id="subject">
+                <div style="background-color: #3f3e3f"
+                class="show-86"id="show">Rare/Med</div>
+                <dialog class="chateauRareMed"id="smallFrame">
+                            
+                <button class='hide-86' id="hide" style="background-color: #3f3e3f">Close</button>
+                <div class="chateauRareMed"id="subject">
+    
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Chateaubriand(Rare-Med/Plain Fries)" 
+            data-price="69.95">Plain Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Chateaubriand(Rare-Med/Skin Fries)" 
+            data-price="69.95">Skin Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Chateaubriand(Rare-Med/Truffle Fries)" 
+            data-price="69.95">Truffle Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Chateaubriand(Rare-Med/Mash)" 
+            data-price="69.95">Mash
+        </button>
+                </div>
+                </dialog>
+
+                <div class="chateaumed"id="subject">
+                    <div style="background-color: #3f3e3f"
+                    class="show-87"id="show">Medium</div>
+                    <dialog class="chateauMed"id="smallFrame">
+                                
+                    <button class='hide-87' id="hide" style="background-color: #3f3e3f">Close</button>
+                    <div class="chateauMed"id="subject">
+        
+            <button 
+                class="btn food-item"
+                type="button"
+                style="background-color: #3f3e3f"
+                data-title="Chateaubriand(Medium/Plain Fries)" 
+                data-price="69.95">Plain Fries
+            </button>
+            <button 
+                class="btn food-item"
+                type="button"
+                style="background-color: #3f3e3f"
+                data-title="Chateaubriand(Medium/Skin Fries)" 
+                data-price="69.95">Skin Fries
+            </button>
+            <button 
+                class="btn food-item"
+                type="button"
+                style="background-color: #3f3e3f"
+                data-title="Chateaubriand(Medium/Truffle Fries)" 
+                data-price="69.95">Truffle Fries
+            </button>
+            <button 
+                class="btn food-item"
+                type="button"
+                style="background-color: #3f3e3f"
+                data-title="Chateaubriand(Medium/Mash)" 
+                data-price="69.95">Mash
+            </button>
+                    </div>
+                    </dialog>
+    
+                     <div class="chateaumedwel"id="subject">
+                    <div style="background-color: #3f3e3f"
+                    class="show-88"id="show">Med/Well</div>
+                    <dialog class="chateauMedWel"id="smallFrame">
+                                
+                    <button class='hide-88' id="hide" style="background-color: #3f3e3f">Close</button>
+                    <div class="chateauMedWel"id="subject">
+        
+            <button 
+                class="btn food-item"
+                type="button"
+                style="background-color: #3f3e3f"
+                data-title="Chateaubriand(Med-Well/Plain Fries)" 
+                data-price="69.95">Plain Fries
+            </button>
+            <button 
+                class="btn food-item"
+                type="button"
+                style="background-color: #3f3e3f"
+                data-title="Chateaubriand(Med-Well/Skin Fries)" 
+                data-price="69.95">Skin Fries
+            </button>
+            <button 
+                class="btn food-item"
+                type="button"
+                style="background-color: #3f3e3f"
+                data-title="Chateaubriand(Med-Well/Truffle Fries)" 
+                data-price="69.95">Truffle Fries
+            </button>
+            <button 
+                class="btn food-item"
+                type="button"
+                style="background-color: #3f3e3f"
+                data-title="Chateaubriand(Med-Well/Mash)" 
+                data-price="69.95">Mash
+            </button>
+                    </div>
+                    </dialog>
+                    <div class="chateauwel"id="subject">
+                    <div style="background-color: #3f3e3f"
+                    class="show-89"id="show">Well Done</div>
+                    <dialog class="chateauWel"id="smallFrame">
+                                
+                    <button class='hide-89' id="hide" style="background-color: #3f3e3f">Close</button>
+                    <div class="chateauWel"id="subject">
+        
+            <button 
+                class="btn food-item"
+                type="button"
+                style="background-color: #3f3e3f"
+                data-title="Chateaubriand(Well-Done/Plain Fries)" 
+                data-price="69.95">Plain Fries
+            </button>
+            <button 
+                class="btn food-item"
+                type="button"
+                style="background-color: #3f3e3f"
+                data-title="Chateaubriand(Well-Done/Skin Fries)" 
+                data-price="69.95">Skin Fries
+            </button>
+            <button 
+                class="btn food-item"
+                type="button"
+                style="background-color: #3f3e3f"
+                data-title="Chateaubriand(Well-Done/Truffle Fries)" 
+                data-price="69.95">Truffle Fries
+            </button>
+            <button 
+                class="btn food-item"
+                type="button"
+                style="background-color: #3f3e3f"
+                data-title="Chateaubriand(Well-Done/Mash)" 
+                data-price="69.95">Mash
+            </button>
+                    </div>
+                    </dialog>
+    
+    
+    </dialog>
+
+
+    <div style="background-color: #3f3e3f"
+    class="show-9" id="show">Fillet Steak 200g</div>
+    <dialog class="filletSteak" id="smallFramede">
+        <button class='hide-9'id="hide" style="background-color: #3f3e3f">Close</button>
+
+                
+            
+            <div class="fsteakblue"id="subject">
+            <div style="background-color: #3f3e3f"
+            class="show-90"id="show">Blue</div>
+            <dialog class="fSteakBlue"id="smallFrame">
+                        
+            <button class='hide-90' id="hide" style="background-color: #3f3e3f">Close</button>
+            <div class="fSteakBlue"id="subject">
+
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Fillet Steak(Blue/Plain Fries)" 
+        data-price="32.95">Plain Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Fillet Steak(Blue/Skin Fries)" 
+        data-price="32.95">Skin Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Fillet Steak(Blue/Truffle Fries)" 
+        data-price="32.95">Truffle Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Fillet Steak(Blue/Mash)" 
+        data-price="32.95">Mash
+    </button>
+            </div>
+
+            </dialog>
+           
+            <div class="fsteakrare"id="subject">
+                <div style="background-color: #3f3e3f"
+                class="show-91"id="show">Rare</div>
+                <dialog class="fSteakRare"id="smallFrame">
+                            
+                <button class='hide-91' id="hide" style="background-color: #3f3e3f">Close</button>
+                <div class="fSteakRare"id="subject">
+    
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Rare/Plain Fries)" 
+            data-price="32.95">Plain Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Rare/Skin Fries)" 
+            data-price="32.95">Skin Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Rare/Truffle Fries)" 
+            data-price="32.95">Truffle Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Rare/Mash)" 
+            data-price="32.95">Mash
+        </button>
+                </div>
+    
+                </dialog>
+               
+                <div class="fsteakraremed"id="subject">
+                    <div style="background-color: #3f3e3f"
+                    class="show-92"id="show">Rare/Med</div>
+                    <dialog class="fSteakRareMed"id="smallFrame">
+                                
+                    <button class='hide-92' id="hide" style="background-color: #3f3e3f">Close</button>
+                    <div class="fSteakRareMed"id="subject">
+
+ <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Rare-Med/Plain Fries)" 
+            data-price="32.95">Plain Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Rare-Med/Skin Fries)" 
+            data-price="32.95">Skin Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Rare-Med/Truffle Fries)" 
+            data-price="32.95">Truffle Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Rare-Med/Mash)" 
+            data-price="32.95">Mash
+        </button>
+                </div>
+    
+                </dialog>
+               
+                <div class="fsteakmed"id="subject">
+                    <div style="background-color: #3f3e3f"
+                    class="show-93"id="show">Medium</div>
+                    <dialog class="fSteakMed"id="smallFrame">
+                                
+                    <button class='hide-93' id="hide" style="background-color: #3f3e3f">Close</button>
+                    <div class="fSteakRareMed"id="subject">
+
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Medium/Plain Fries)" 
+            data-price="32.95">Plain Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Medium/Skin Fries)" 
+            data-price="32.95">Skin Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Medium/Truffle Fries)" 
+            data-price="32.95">Truffle Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Medium/Mash)" 
+            data-price="32.95">Mash
+        </button>
+                </div>
+        </dialog>
+    
+        <div class="fsteakmedwel"id="subject">
+            <div style="background-color: #3f3e3f"
+            class="show-94"id="show">Med/Well</div>
+            <dialog class="fSteakMedWel"id="smallFrame">
+                        
+            <button class='hide-94' id="hide" style="background-color: #3f3e3f">Close</button>
+            <div class="fSteakRareMedWel"id="subject">
+
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Med-Well/Plain Fries)" 
+            data-price="32.95">Plain Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Med-Well/Skin Fries)" 
+            data-price="32.95">Skin Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Med-Well/Truffle Fries)" 
+            data-price="32.95">Truffle Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Med-Well/Mash)" 
+            data-price="32.95">Mash
+        </button>
+                </div>
+        </dialog>
+
+        <div class="fsteakwel"id="subject">
+            <div style="background-color: #3f3e3f"
+            class="show-95"id="show">Well Done</div>
+            <dialog class="fSteakWel"id="smallFrame">
+                        
+            <button class='hide-95' id="hide" style="background-color: #3f3e3f">Close</button>
+            <div class="fSteakRareWel"id="subject">
+
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Well Done/Plain Fries)" 
+            data-price="32.95">Plain Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Well Done/Skin Fries)" 
+            data-price="32.95">Skin Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Well Done/Truffle Fries)" 
+            data-price="32.95">Truffle Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Fillet Steak(Well Done/Mash)" 
+            data-price="32.95">Mash
+        </button>
+                </div>
+        </dialog>
+
+
+    
+
+        </dialog>
+            
+            <div style="background-color: #3f3e3f"
+            class="show-10" id="show">Rib-Eye 8oz</div>
+            <dialog class="ribEye" id="smallFramede">
+                <button class='hide-10'id="hide" style="background-color: #3f3e3f">Close</button>
+
+                <div class="ribeyeblue"id="subject">
+                    <div style="background-color: #3f3e3f"
+                    class="show-96"id="show">Blue</div>
+                    <dialog class="ribEyeBlue"id="smallFrame">
+                                
+                    <button class='hide-96' id="hide" style="background-color: #3f3e3f">Close</button>
+                    <div class="ribEyeBlue"id="subject">
+        
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Blue/Plain Fries)" 
+            data-price="29.95">Plain Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Blue/Skin Fries)" 
+            data-price="29.95">Skin Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Blue/Truffle Fries)" 
+            data-price="29.95">Truffle Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Blue/Mash)" 
+            data-price="29.95">Mash
+        </button>
+</div>
+</dialog>       
+
+<div class="ribeyerare"id="subject">
+    <div style="background-color: #3f3e3f"
+    class="show-97"id="show">Rare</div>
+    <dialog class="ribEyeRare"id="smallFrame">
+                
+    <button class='hide-97' id="hide" style="background-color: #3f3e3f">Close</button>
+    <div class="ribEyeRare"id="subject">
+
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Rare/Plain Fries)" 
+            data-price="29.95">Plain Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Rare/Skin Fries)" 
+            data-price="29.95">Skin Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Rare/Truffle Fries)" 
+            data-price="29.95">Truffle Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Rare/Mash)" 
+            data-price="29.95">Mash
+        </button>
+            </div>
+            </dialog>
+                     
+            <div class="ribeyeraremed"id="subject">
+    <div style="background-color: #3f3e3f"
+    class="show-98"id="show">Rare/Medium</div>
+    <dialog class="ribEyeRareMed"id="smallFrame">
+                
+    <button class='hide-98' id="hide" style="background-color: #3f3e3f">Close</button>
+    <div class="ribEyeRareMed"id="subject">
+
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Rare-Med/Plain Fries)" 
+            data-price="29.95">Plain Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Rare-Med/Skin Fries)" 
+            data-price="29.95">Skin Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Rare-Med/Truffle Fries)" 
+            data-price="29.95">Truffle Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Rare-Med/Mash)" 
+            data-price="29.95">Mash
+        </button>
+            </div>
+            </dialog>
+
+
+            <div class="ribeyemed"id="subject">
+    <div style="background-color: #3f3e3f"
+    class="show-99"id="show">Medium</div>
+    <dialog class="ribEyeMed"id="smallFrame">
+                
+    <button class='hide-99' id="hide" style="background-color: #3f3e3f">Close</button>
+    <div class="ribEyeMed"id="subject">
+
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Medium/Plain Fries)" 
+            data-price="29.95">Plain Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Medium/Skin Fries)" 
+            data-price="29.95">Skin Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Medium/Truffle Fries)" 
+            data-price="29.95">Truffle Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Medium/Mash)" 
+            data-price="29.95">Mash
+        </button>
+            </div>
+            </dialog>
+
+            <div class="ribeyemedwel"id="subject">
+    <div style="background-color: #3f3e3f"
+    class="show-100"id="show">Med/Well</div>
+    <dialog class="ribEyeMedWel"id="smallFrame">
+                
+    <button class='hide-100' id="hide" style="background-color: #3f3e3f">Close</button>
+    <div class="ribEyeMedWel"id="subject">
+
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Med-Well/Plain Fries)" 
+            data-price="29.95">Plain Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Med-Well/Skin Fries)" 
+            data-price="29.95">Skin Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Med-Well/Truffle Fries)" 
+            data-price="29.95">Truffle Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Rib-Eye(Med-Well/Mash)" 
+            data-price="29.95">Mash
+        </button>
+            </div>
+            </dialog>
+
+            <div class="ribeyewel"id="subject">
+                <div style="background-color: #3f3e3f"
+                class="show-101"id="show">Well Done</div>
+                <dialog class="ribEyeWel"id="smallFrame">
+                            
+                <button class='hide-101' id="hide" style="background-color: #3f3e3f">Close</button>
+                <div class="ribEyeWel"id="subject">
+            
+                    <button 
+                        class="btn food-item"
+                        type="button"
+                        style="background-color: #3f3e3f"
+                        data-title="Rib-Eye(Well Done/Plain Fries)" 
+                        data-price="29.95">Plain Fries
+                    </button>
+                    <button 
+                        class="btn food-item"
+                        type="button"
+                        style="background-color: #3f3e3f"
+                        data-title="Rib-Eye(Well Done/Skin Fries)" 
+                        data-price="29.95">Skin Fries
+                    </button>
+                    <button 
+                        class="btn food-item"
+                        type="button"
+                        style="background-color: #3f3e3f"
+                        data-title="Rib-Eye(Well Done/Truffle Fries)" 
+                        data-price="29.95">Truffle Fries
+                    </button>
+                    <button 
+                        class="btn food-item"
+                        type="button"
+                        style="background-color: #3f3e3f"
+                        data-title="Rib-Eye(Well Done/Mash)" 
+                        data-price="29.95">Mash
+                    </button>
+                        </div>
+                        </dialog>
+</dialog>
+    
+
+    <div style="background-color: #3f3e3f"
+    class="show-11" id="show">Flank Steak</div>
+    <dialog class="flankSteak" id="smallFramede">
+        <button class='hide-11'id="hide" style="background-color: #3f3e3f">Close</button>
+
+        <div class="flankblue"id="subject">
+            <div style="background-color: #3f3e3f"
+            class="show-102"id="show">Blue</div>
+            <dialog class="flankBlue"id="smallFrame">
+                        
+            <button class='hide-102' id="hide" style="background-color: #3f3e3f">Close</button>
+            <div class="flankBlue"id="subject">
+        
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Flank Steak(Blue/Plain Fries)" 
+        data-price="22.55">Plain Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button" 
+        style="background-color: #3f3e3f"
+        data-title="Flank Steak(Blue/Skin Fries)" 
+        data-price="22.55">Skin Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Flank Steak(Blue/Truffle Fries)" 
+        data-price="22.55">Truffle Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #3f3e3f"
+        data-title="Flank Steak(Blue/Mash)" 
+        data-price="22.55">Mash
+    </button>
+            </div>
+            </dialog>
+
+            <div class="flankrare"id="subject">
+                <div style="background-color: #3f3e3f"
+                class="show-103"id="show">Rare</div>
+                <dialog class="flankRare"id="smallFrame">
+                            
+                <button class='hide-103' id="hide" style="background-color: #3f3e3f">Close</button>
+                <div class="flankRare"id="subject">
+            
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Flank Steak(Rare/Plain Fries)" 
+            data-price="22.55">Plain Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button" 
+            style="background-color: #3f3e3f"
+            data-title="Flank Steak(Rare/Skin Fries)" 
+            data-price="22.55">Skin Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Flank Steak(Rare/Truffle Fries)" 
+            data-price="22.55">Truffle Fries
+        </button>
+        <button 
+            class="btn food-item"
+            type="button"
+            style="background-color: #3f3e3f"
+            data-title="Flank Steak(Rare/Mash)" 
+            data-price="22.55">Mash
+        </button>
+                </div>
+                </dialog>
+
+                <div class="flankraremed"id="subject">
+                    <div style="background-color: #3f3e3f"
+                    class="show-104"id="show">Rare/Med</div>
+                    <dialog class="flankRareMed"id="smallFrame">
+                                
+                    <button class='hide-104' id="hide" style="background-color: #3f3e3f">Close</button>
+                    <div class="flankRareMed"id="subject">
+                
+            <button 
+                class="btn food-item"
+                type="button"
+                style="background-color: #3f3e3f"
+                data-title="Flank Steak(Rare-Med/Plain Fries)" 
+                data-price="22.55">Plain Fries
+            </button>
+            <button 
+                class="btn food-item"
+                type="button" 
+                style="background-color: #3f3e3f"
+                data-title="Flank Steak(Rare-Med/Skin Fries)" 
+                data-price="22.55">Skin Fries
+            </button>
+            <button 
+                class="btn food-item"
+                type="button"
+                style="background-color: #3f3e3f"
+                data-title="Flank Steak(Rare-Med/Truffle Fries)" 
+                data-price="22.55">Truffle Fries
+            </button>
+            <button 
+                class="btn food-item"
+                type="button"
+                style="background-color: #3f3e3f"
+                data-title="Flank Steak(Rare-Med/Mash)" 
+                data-price="22.55">Mash
+            </button>
+                    </div>
+                    </dialog>
+
+                    <div class="flankmed"id="subject">
+                        <div style="background-color: #3f3e3f"
+                        class="show-105"id="show">Medium</div>
+                        <dialog class="flankMed"id="smallFrame">
+                                    
+                        <button class='hide-105' id="hide" style="background-color: #3f3e3f">Close</button>
+                        <div class="flankMed"id="subject">
+                    
+                <button 
+                    class="btn food-item"
+                    type="button"
+                    style="background-color: #3f3e3f"
+                    data-title="Flank Steak(Medium/Plain Fries)" 
+                    data-price="22.55">Plain Fries
+                </button>
+                <button 
+                    class="btn food-item"
+                    type="button" 
+                    style="background-color: #3f3e3f"
+                    data-title="Flank Steak(Medium/Skin Fries)" 
+                    data-price="22.55">Skin Fries
+                </button>
+                <button 
+                    class="btn food-item"
+                    type="button"
+                    style="background-color: #3f3e3f"
+                    data-title="Flank Steak(Medium/Truffle Fries)" 
+                    data-price="22.55">Truffle Fries
+                </button>
+                <button 
+                    class="btn food-item"
+                    type="button"
+                    style="background-color: #3f3e3f"
+                    data-title="Flank Steak(Medium/Mash)" 
+                    data-price="22.55">Mash
+                </button>
+                        </div>
+                        </dialog>
+    
+                        <div class="flankmedwel"id="subject">
+                            <div style="background-color: #3f3e3f"
+                            class="show-106"id="show">Medium/Well</div>
+                            <dialog class="flankMedWel"id="smallFrame">
+                                        
+                            <button class='hide-106' id="hide" style="background-color: #3f3e3f">Close</button>
+                            <div class="flankMedWel"id="subject">
+                        
+                    <button 
+                        class="btn food-item"
+                        type="button"
+                        style="background-color: #3f3e3f"
+                        data-title="Flank Steak(Med-Well/Plain Fries)" 
+                        data-price="22.55">Plain Fries
+                    </button>
+                    <button 
+                        class="btn food-item"
+                        type="button" 
+                        style="background-color: #3f3e3f"
+                        data-title="Flank Steak(Med-Well/Skin Fries)" 
+                        data-price="22.55">Skin Fries
+                    </button>
+                    <button 
+                        class="btn food-item"
+                        type="button"
+                        style="background-color: #3f3e3f"
+                        data-title="Flank Steak(Med-Well/Truffle Fries)" 
+                        data-price="22.55">Truffle Fries
+                    </button>
+                    <button 
+                        class="btn food-item"
+                        type="button"
+                        style="background-color: #3f3e3f"
+                        data-title="Flank Steak(Med-Well/Mash)" 
+                        data-price="22.55">Mash
+                    </button>
+                            </div>
+                            </dialog>
+
+                            <div class="flankwel"id="subject">
+                                <div style="background-color: #3f3e3f"
+                                class="show-107"id="show">Well Done</div>
+                                <dialog class="flankWel"id="smallFrame">
+                                            
+                                <button class='hide-107' id="hide" style="background-color: #3f3e3f">Close</button>
+                                <div class="flankWel"id="subject">
+                            
+                        <button 
+                            class="btn food-item"
+                            type="button"
+                            style="background-color: #3f3e3f"
+                            data-title="Flank Steak(Well Done/Plain Fries)" 
+                            data-price="22.55">Plain Fries
+                        </button>
+                        <button 
+                            class="btn food-item"
+                            type="button" 
+                            style="background-color: #3f3e3f"
+                            data-title="Flank Steak(Well Done/Skin Fries)" 
+                            data-price="22.55">Skin Fries
+                        </button>
+                        <button 
+                            class="btn food-item"
+                            type="button"
+                            style="background-color: #3f3e3f"
+                            data-title="Flank Steak(Well Done/Truffle Fries)" 
+                            data-price="22.55">Truffle Fries
+                        </button>
+                        <button 
+                            class="btn food-item"
+                            type="button"
+                            style="background-color: #3f3e3f"
+                            data-title="Flank Steak(Well Done/Mash)" 
+                            data-price="22.55">Mash
+                        </button>
+                                </div>
+                                </dialog>
+        </div>
+   
+    </dialog>
+    </dialog>
+
+ 
+
+  <div style="background-color: #570407"
+  class="show-12"id="show">Salads</div>
+  <dialog class="salads"id="smallFrame">
+
+    <button class='hide-12'id="hide"style="background-color: #570407">Close</button>
+<div class="salads"id="subject">
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #570407"
+        data-title="Romesco Chick Salad" 
+        data-price="14.95">Romesco Chick Salad
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #570407"
+        data-title="Roast Veg Salad" 
+        data-price="13.95">Roast Veg Salad
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #570407"
+        data-title="Caesar Salad" 
+        data-price="12.25">Caesar Salad
+    </button>
+   </div>
+  </dialog>
+
+  <div style="background-color: #c7ef15"
+  class="show-13"id="show">Sides</div>
+  <dialog class="sides"id="smallFrame">
+
+    <button class='hide-13'id="hide"  style="background-color: #c7ef15">Close</button>
+<div class="sides"id="subject">
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="Courgettes" 
+        data-price="4.45">Courgettes
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="Broccoli" 
+        data-price="4.75">Broccoli
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="Cabbage" 
+        data-price="4.45">Cabbage
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="Mash" 
+        data-price="4.45">Mash
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="Roasted Carrots" 
+        data-price="4.75">Roasted Carrots
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="Polenta Chips" 
+        data-price="5.25">Polenta Chips
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="House Salad" 
+        data-price="4.45">House Salad
+    </button>
+
+    <div style="background-color: #c7ef15"
+    class="show-108"id="show">Fries</div>
+    <dialog class="fries"id="smallFrame">
+  
+      <button class='hide-108'id="hide"  style="background-color: #c7ef15">Close</button>
+  <div class="fries"id="subject">
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="Plain Fries" 
+        data-price="4.95">Plain Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="Skin Fries" 
+        data-price="4.95">Skin Fries
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="Truffle Fries" 
+        data-price="5.25">Truffle Fries
+    </button>
+  </div>
+    </dialog>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="Roast Potatoes" 
+        data-price="4.95">Roast Potatoes
+    </button>
+</div>
+  </dialog>
+
+  <div style="background-color: #11d1ee"
+  class="show-14"id="show">Roasts</div>
+  <dialog class="roasts"id="smallFrame">
+
+    <button class='hide-14'id="hide" style="background-color: #11d1ee">Close</button>
+
+<div class="roasts"id="subject">
+
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #11d1ee"
+        data-title="Sirloin Roast" 
+        data-price="20.95">Sirloin Roast
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #11d1ee"
+        data-title="Pork Roast"
+        data-price="19.95">Pork Roast
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #11d1ee"
+        data-title="Chicken Roast" 
+        data-price="18.95">Chicken Roast
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #11d1ee"
+        data-title="Mushroom Pudding" 
+        data-price="16.95">Mushroom Pudding
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #11d1ee"
+        data-title="Kids Beef Roast" 
+        data-price="10.95">Kids Beef Roast
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #11d1ee"
+        data-title="Kids Pork Roast" 
+        data-price="10.95">Kids Pork Roast
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #11d1ee"
+        data-title="Kids Chicken Roast" 
+        data-price="10.95">Kids Chicken Roast
+    </button>
+
+</div>
+  </dialog>
+
+    <div style="background-color: #0764ef"
+    class="show-15"id="show">Brunch</div>
+    <dialog class="brunch"id="smallFrame">
+
+        <button class='hide-15'id="hide" style="background-color: #0764ef">Close</button>
+<div class="brunch"id="subject">
+
+        <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #0764ef"
+        data-title="Full Breakfast" 
+        data-price="10.95">Full Breakfast
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #0764ef"
+        data-title="Vegetarian Breakfast"
+        data-price="10.95">Vegetarian Breakfast
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #0764ef"
+        data-title="Vegan Breakfast" 
+        data-price="10.45">Vegan Breakfast
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #0764ef"
+        data-title="Kids Full Breakfast" 
+        data-price="6.95">Kids Full Breakfast
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #0764ef"
+        data-title="Eggs Benedict" 
+        data-price="9.95">Eggs Benedict
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #0764ef"
+        data-title="Eggs Royale" 
+        data-price="10.45">Eggs Royale
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #0764ef"
+        data-title="Eggs Florentine" 
+        data-price="9.75">Eggs Florentine
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #0764ef"
+        data-title="Avocado Toast" 
+        data-price="10.75">Avocado Toast
+    </button>
+
+</div>
+    </dialog>
+    <div style="background-color: #b709ec"
+  class="show-16"id="show">Cannoli</div>
+  <dialog class="cannoli"id="smallFrame">
+
+    <button class='hide-16'id="hide" style="background-color: #b709ec" >Close</button>
+
+    <div class="cannoli"id="subject">
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #b709ec" 
+        data-title="Chocolate Cannoli" 
+        data-price="3.25">Chocolate Cannoli
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #b709ec" 
+        data-title="Pistachio Cannoli"
+        data-price="3.25">Pistachio Cannoli
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"  
+        style="background-color: #b709ec"
+        data-title="Fruit Cannoli" 
+        data-price="3.25">Fruit Cannoli
+    </button>
+    
+    
+    </div>
+  </dialog>
+ 
+<div style="background-color: #e50bcf"
+  class="show-17"id="show">Desserts</div>
+  <dialog class="desserts"id="smallFrame">
+
+    <button class='hide-17'id="hide"  style="background-color: #e50bcf">Close</button>
+<div class="desserts"id="subject">
+
+    <button
+        class="btn food-item"
+        type="button" 
+        style="background-color: #e50bcf"
+        data-title="Biscoff Dough Petals" 
+        data-price="12.95">Biscoff Dough Petals
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #e50bcf"
+        data-title="Sticky Toffee Pudding" 
+        data-price="7.95">Toffee Pudding
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #e50bcf"
+        data-title="Bombolini" 
+        data-price="7.95">Bombolini
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #e50bcf"
+        data-title="Tiramisu" 
+        data-price="7.95">Tiramisu
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #e50bcf"
+        data-title="Biscoff Cheesecake" 
+        data-price="7.95">Cheesecake
+    </button>
+    
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #e50bcf"
+        data-title="Affogato" 
+        data-price="6.95">Affogato
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #e50bcf"
+        data-title="Creme Brulee" 
+        data-price="7.95">Creme Brulee
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #e50bcf"
+        data-title="Chocolate Martini" 
+        data-price="7.95">Chocolate Martini
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #e50bcf"
+        data-title="Lemon Tart" 
+        data-price="8.95">Lemon Tart
+    </button>
+    <button 
+        class="btn food-item"
+        type="button" class="btn" 
+        style="background-color: #e50bcf"
+        data-title="Chocolate Brownie" 
+        data-price="8.95">Chocolate Brownie
+    </button>
+
+    <div style="background-color: #e50bcf"
+  class="show-18"id="show">Gelato</div>
+  <dialog class="gelato"id="options">
+
+    <button class='hide-18'id="hide"  style="background-color: #e50bcf">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #e50bcf"
+        data-title="Chocolate Gelato" 
+        data-price="5.95">Chocolate 
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #e50bcf"
+        data-title="Vanilla Gelato" 
+        data-price="5.95">Vanilla 
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #e50bcf"
+        data-title="Strawberry Gelato" 
+        data-price="5.95">Strawberry
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #e50bcf"
+        data-title="Mix Gelato" 
+        data-price="5.95">Mix
+</button>
+  </dialog>
+
+  <div style="background-color: #e50bcf"
+  class="show-19"id="show">Sorbet</div>
+  <dialog class="sorbet"id="options">
+
+    <button class='hide-19'id="hide"  style="background-color: #e50bcf">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #e50bcf"
+        data-title="Lemon Sorbet" 
+        data-price="5.95">Lemon 
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #e50bcf"
+        data-title="Mandarin Sorbet" 
+        data-price="5.95">Mandarin 
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #e50bcf"
+        data-title="Raspberry Sorbet" 
+        data-price="5.95">Raspberry 
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #e50bcf"
+        data-title="Mix Sorbet" 
+        data-price="5.95">Mix
+    </button>
+  </dialog>
+    </div>
+
+  </dialog>
+
+   
+  <div style="background-color: #f34576"
+  class="show-20"id="show">Kids Menu</div>
+  <dialog class="kids"id="smallFrame">
+
+    <button class='hide-20'id="hide" style="background-color: #f34576">Close</button>
+    <div class="kids-menu"id="subject">
+
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #f34576"
+        data-title="Kids Houmous" 
+        data-price="3.95">Kids Houmous
+    </button>
+    <button 
+        class="btn food-item"
+        type="button" 
+        style="background-color: #f34576"
+        data-title="Kids Dough Petals" 
+        data-price="3.95">Kids Dough Petals
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #f34576"
+        data-title="Kids Pasta" 
+        data-price="6.95">Kids Pasta
+    </button>
+    <button 
+        class="btn food-item"
+        type="button" 
+        style="background-color: #f34576"
+        data-title="Kids Burger" 
+        data-price="7.95">Kids Burger
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f34576"
+        data-title="Kids Fish" 
+        data-price="6.95">Kids Fish
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f34576"
+        data-title="Kids Chicken Strips" 
+        data-price="6.95">Kids Chicken Strips
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f34576"
+        data-title="Kids MYO Pizza" 
+        data-price="7.95">Kids MYO Pizza
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f34576"
+        data-title="Kids Brownie" 
+        data-price="4.95">Kids Brownie
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f34576"
+        data-title="Kids Bombolini" 
+        data-price="4.95">Kids Bombolini
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f34576"
+        data-title="Kids Gelato" 
+        data-price="3.95">Kids Gelato
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f34576"
+        data-title="Kids Sorbet" 
+        data-price="3.95">Kids Sorbet
+    </button>
+    </div>
+  </dialog>
+  
+
+  <div style="background-color: #10b578"
+  class="show-21"id="show">Spritz Cocktails</div>
+  <dialog class="spritz"id="smallFrame">
+
+    <button class='hide-21'id="hide" style="background-color: #10b578">Close</button>
+<div class="spritz"id="subject">
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #10b578"
+        data-title="Aperol Spritz" 
+        data-price="9.25">Aperol Spritz
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #10b578"
+        data-title="Watermleon Spritz" 
+        data-price="9.75">Watermleon Spritz
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #10b578"
+        data-title="Hugo Spritz" 
+        data-price="9.25">Hugo Spritz
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #10b578"
+        data-title="Passion Sprtiz" 
+        data-price="9.25">Passion Spritz
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #10b578"
+        data-title="Berry Spritz" 
+        data-price="9.75">Passion Spritz
+    </button>
+    </div>
+    </dialog>
+    
+
+    <div style="background-color: #dc185d"
+  class="show-22"id="show">Sig Cocktails</div>
+  <dialog class="cocktails"id="smallFrame">
+
+    <button class='hide-22'id="hide" style="background-color: #dc185d">Close</button>
+<div class="sig-cocktails"id="subject">
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Negroni" 
+        data-price="9.25">Negroni
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Peach Bellini" 
+        data-price="8.95">Peach Bellini
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Straw & Kiwi Sling" 
+        data-price="9.75">Straw & Kiwi Swing
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Apple Martini" 
+        data-price="9.25">Apple Martini
+    </button>
+    <button
+        class="btn food-item"
+        type="button" 
+        style="background-color: #dc185d"
+        data-title="Paloma" 
+        data-price="9.95">Paloma
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Rhubarb Sour" 
+        data-price="9.75">Rhubarb Sour
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Old Fashioned" 
+        data-price="9.95">Old Fashioned
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Smokey Old Fashioned" 
+        data-price="11.95">Smokey Old Fashioned
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Tequilla Old Fashioned" 
+        data-price="13.95">Tequilla Old Fashioned
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Lychee Martini" 
+        data-price="9.45">Lychee Martini
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Espresso Martini" 
+        data-price="9.95">Espresso Martini
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Pornstar Martini" 
+        data-price="10.95">Pornstar Martini
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Classic Martini"
+        data-price="9.75">Classic Martini
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Mojito" 
+        data-price="9.25">Mojito
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Passion Mojito" 
+        data-price="9.25">Passion Mojito
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Raspberry Mojito" 
+        data-price="9.25">Raspberry Mojito
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Coconut Rum" 
+        data-price="9.25">Coconut Rum
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Coconut Sour" 
+        data-price="9.95">Coconut Sour
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Pina Colada" 
+        data-price="9.75">Pina Colada
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Summer Iced Tea" 
+        data-price="9.45">Summer Iced Tea
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Strawberry Daiquiri" 
+        data-price="9.95">Strawberry Daiquiri
+    </button>
+</div>
+  </dialog>
+
+  <div style="background-color: #67666a"
+  class="show-23"id="show">Signature G & T</div>
+  <dialog class="gt"id="smallFrame">
+
+    <button class='hide-23'id="hide" style="background-color: #67666a">Close</button>
+<div class="signature"id="subject">
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #67666a"
+        data-title="Pink Gin" 
+        data-price="9.95">Pink Gin
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #67666a"
+        data-title="Elderflower" 
+        data-price="9.95">Elderflower
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #67666a"
+        data-title="Bombay Citron" 
+        data-price="9.95">Bombay Citron
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #67666a"
+        data-title="Watermleon" 
+        data-price="9.95">Watermelon
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #67666a"
+        data-title="Bloody Orange" 
+        data-price="9.95">Bloody Orange
+    </button>
+</div>
+  </dialog>
+
+  <div style="background-color: #7575e6"
+  class="show-24"id="show">NA Cocktails</div>
+  <dialog class="nacocktails"id="smallFrame">
+
+    <button class='hide-24'id="hide" style="background-color: #7575e6">Close</button>
+<div class="non-alcoholic"id="subject">
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #7575e6"
+        data-title="NA Pink Gin" 
+        data-price="6.95">NA Pink Gin
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #7575e6"
+        data-title="NA Crodino" 
+        data-price="6.95">NA Crodino
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #7575e6"
+        data-title="NA Orange Spritz" 
+        data-price="6.95">NA Orange Spritz
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #7575e6"
+        data-title="NA No-jito" 
+        data-price="6.95">NA No-jito
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #7575e6"
+        data-title="Virgin Pornstar" 
+        data-price="6.95">Virgin Pornstar
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #7575e6"
+        data-title="NA Elderflower Spritz" 
+        data-price="6.95">NA Elderflower Spritz
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #7575e6"
+        data-title="Virgin Straw Daiquiri" 
+        data-price="6.95">Virgin Straw Daiquiri
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #7575e6"
+        data-title="NA Colada" 
+        data-price="6.95">NA Colada
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #7575e6"
+        data-title="Virgin Cosmo" 
+        data-price="6.95">Virgin Cosmo
+    </button>
+   </div>
+  </dialog>
+
+  <div style="background-color: #c7ef15"
+  class="show-25"id="show">Fizz</div>
+  <dialog class="fizz"id="smallFrame">
+
+    <button class='hide-25'id="hide" style="background-color: #c7ef15">Close</button>
+<div class="fizz"id="subject">
+
+    <div style="background-color: #c7ef15"
+  class="show-26"id="show">Prosecco</div>
+  <dialog class="prosecco"id="options">
+
+    <button class='hide-26'id="hide" style="background-color: #c7ef15">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="Prosecco 125ml Glass" 
+        data-price="7.75">125ml Glass
+    </button>
+    <button 
+        class="btn food-item"
+        type="button" 
+        style="background-color: #c7ef15"
+        data-title="Prosecco Bottle" 
+        data-price="33.95">Bottle
+    </button>
+  </dialog>
+
+    <div style="background-color: #c7ef15"
+    class="show-27"id="show">Rose Prosecco</div>
+    <dialog class="roseProsecco"id="options">
+
+    <button class='hide-27'id="hide" style="background-color: #c7ef15">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="Rose Pros 125ml Glass" 
+        data-price="8.25">125ml Glass
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="Rose Prosecco Bottle" 
+        data-price="35.95">Bottle
+    </button>
+    </dialog>
+
+    <div style="background-color: #c7ef15"
+    class="show-28"id="show">Ferrari Brut</div>
+    <dialog class="ferrariBrut"id="options">
+
+    <button class='hide-28'id="hide" style="background-color: #c7ef15">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="Ferrari 125ml Glass" 
+        data-price="9.95">125ml Glass
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="Ferrari Brut Bottle" 
+        data-price="51.95">Bottle
+    </button>
+    </dialog>
+
+    <div style="background-color: #c7ef15"
+    class="show-29"id="show">Max Brut</div>
+    <dialog class="maxBrut"id="options">
+
+    <button class='hide-29'id="hide" style="background-color: #c7ef15">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="Max Brut 125ml Glass" 
+        data-price="11.45">125ml Glass
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="Max Brut Bottle" 
+        data-price="60.95">Bottle
+    </button>
+    </dialog>
+
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="Pommery Brut Bottle"
+        data-price="69.95">Pommery Brut Bottle
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #c7ef15"
+        data-title="Pommery Rose Bottle" 
+        data-price="79.99">Pommery Rose Bottle
+    </button>
+    <button 
+        class="btn food-item"
+        type="button" 
+        style="background-color: #c7ef15"
+        data-title="Belle Epouqe" 
+        data-price="219.99">Belle Epouqe
+    </button>
+
+</div>
+  </dialog>
+
+  <div style="background-color: #0f2063"
+  class="show-30"id="show">White Wine</div>
+  <dialog class="whiteWine"id="smallFrame">
+
+    <button class='hide-30'id="hide" style="background-color: #080898">Close</button>
+
+<div class="white-wine"id="subject">
+
+    <div style="background-color: #080898"
+    class="show-31"id="show">San Pinot G</div>
+    <dialog class="sanPinot"id="options">
+
+    <button class='hide-31'id="hide" style="background-color: #080898">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="San Pinot 175ml" 
+        data-price="6.45">175ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="San Pinot 250ml"
+        data-price="9.55">250ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="San Pinot Grigio Bottle" 
+        data-price="27.95">Bottle
+    </button>
+    </dialog>
+
+    <div style="background-color: #080898"
+    class="show-32"id="show">Verna Sauv</div>
+    <dialog class="vernaSauv"id="options">
+
+    <button class='hide-32'id="hide" style="background-color: #080898">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Verna Sauv 175ml" 
+        data-price="7.45">175ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Verna Sauv 250ml" 
+        data-price="10.45">250ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Verna Sauv Bottle" 
+        data-price="30.95">Bottle
+    </button>
+    </dialog>
+
+    <div style="background-color: #080898"
+    class="show-33"id="show">Gavi Gavi</div>
+    <dialog class="gaviGavi"id="options">
+
+    <button class='hide-33'id="hide" style="background-color: #080898">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Gavi Gavi 175ml" 
+        data-price="9.45">175ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Gavi Gavi 250ml" 
+        data-price="12.99">250ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Gavi Gavi Bottle" 
+        data-price="37.45">Bottle
+    </button>
+    </dialog>
+
+
+    <div style="background-color: #080898"
+    class="show-34"id="show">Pra Otto</div>
+    <dialog class="praOtto"id="options">
+
+    <button class='hide-34'id="hide" style="background-color: #080898">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Pra Otto 175ml" 
+        data-price="9.75">175ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Pra Otto 250ml" 
+        data-price="13.75">250ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Pra Otto Bottle" 
+        data-price="40.99">Bottle
+    </button>
+    </dialog>
+
+
+    <div style="background-color: #080898"
+    class="show-35"id="show">Sicilane</div>
+    <dialog class="sicilane"id="options">
+
+    <button class='hide-35'id="hide" style="background-color: #080898">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Sicilane 175ml" 
+        data-price="6.75">175ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button" 
+        style="background-color: #080898"
+        data-title="Sicilane 250ml" 
+        data-price="8.75">250ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Sicilane Bottle" 
+        data-price="22.95">Bottle
+    </button>
+    </dialog>
+
+    <div style="background-color: #080898"
+    class="show-36"id="show">Alto Chard</div>
+    <dialog class="altoChard"id="options">
+
+    <button class='hide-36'id="hide" style="background-color: #080898">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Alto Chard 175ml" 
+        data-price="10.25">175ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Alto Chard 250ml" 
+        data-price="15.25">250ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Alto Chard Bottle" 
+        data-price="45.25">Bottle
+    </button>
+    </dialog>
+
+    <div style="background-color: #080898"
+    class="show-37"id="show">Organic PG</div>
+    <dialog class="organicPg"id="options">
+
+    <button class='hide-37'id="hide" style="background-color: #080898">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Organic PG 175ml" 
+        data-price="8.25">175ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Organic PG 250ml" 
+        data-price="11.75">250ml
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Organic PG Bottle" 
+        data-price="34.95">Bottle
+    </button>
+    </dialog>
+
+    <button
+        class="btn food-item"
+        type="button" 
+        style="background-color: #080898"
+        data-title="Cloudy Bay Bottle" 
+        data-price="57.95">Cloudy Bay Bottle
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Domaine Chavy Bottle" 
+        data-price="84.95">Domaine Chavy Bottle
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Lowengang Bottle" 
+        data-price="64.95">Lowengang Bottle
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #080898"
+        data-title="Bulgarini Bottle" 
+        data-price="44.95">Bulgarini Bottle
+    </button>
+
+</div>
+  </dialog>
+
+    <div style="background-color: #2e17ff"
+    class="show-38"id="show">Red Wine</div>
+    <dialog class="redWine"id="smallFrame">
+
+        <button class='hide-38'id="hide" style="background-color: #2e17ff">Close</button>
+<div class="red-wine"id="subject">
+
+    <div style="background-color: #2e17ff"
+    class="show-39"id="show">Rambler</div>
+    <dialog class="rambler"id="options">
+
+    <button class='hide-39'id="hide" style="background-color: #2e17ff">Close</button>
+        <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Rambler 175ml" 
+        data-price="5.75">175ml 
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Rambler 250ml"
+        data-price="7.75">250ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Rambler Bottle" 
+        data-price="22.95">Bottle
+    </button>
+    </dialog>
+
+    <div style="background-color: #2e17ff"
+    class="show-40"id="show">Barbera</div>
+    <dialog class="barbera"id="options">
+
+    <button class='hide-40'id="hide" style="background-color: #2e17ff">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Barbera 175ml" 
+        data-price="6.45">175ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Barbera 250ml" 
+        data-price="9.25">250ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Barbera Bottle" 
+        data-price="26.95">Bottle
+    </button>
+    </dialog>
+
+    <div style="background-color: #2e17ff"
+    class="show-41"id="show">Nero DVC</div>
+    <dialog class="neroD"id="options">
+
+    <button class='hide-41'id="hide" style="background-color: #2e17ff">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Nero DVC 175ml" 
+        data-price="9.45">175ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Nero DVC 250ml" 
+        data-price="13.45">250ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Nero DVC Bottle" 
+        data-price="39.95">Bottle
+    </button>
+    </dialog>
+
+
+    <div style="background-color: #2e17ff"
+    class="show-42"id="show">Montresor</div>
+    <dialog class="montresor"id="options">
+
+    <button class='hide-42'id="hide" style="background-color: #2e17ff">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Montresor 175ml" 
+        data-price="10.95">175ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Montresor 250ml" 
+        data-price="15.75">250ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Montresor Bottle" 
+        data-price="46.95">Bottle
+    </button>
+    </dialog>
+
+
+    <div style="background-color: #2e17ff"
+    class="show-43"id="show">Etna Rosso</div>
+    <dialog class="etnaRosso"id="options">
+
+    <button class='hide-43'id="hide" style="background-color: #2e17ff">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Etna Rosso 175ml" 
+        data-price="10.25">175ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Etna Rosso 250ml" 
+        data-price="14.75">250ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Etna Rosso Bottle" 
+        data-price="42.95">Bottle
+    </button>
+    </dialog>
+
+        <div style="background-color: #2e17ff"
+        class="show-44"id="show">Sardo Sard</div>
+        <dialog class="sardoSard"id="options">
+
+    <button class='hide-44'id="hide" style="background-color: #2e17ff">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Sardo Sard 175ml" 
+        data-price="7.75">175ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Sardo Sard 250ml" 
+        data-price="10.75">250ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Sardo Sard Bottle" 
+        data-price="31.95">Bottle
+    </button>
+        </dialog>
+
+        <div style="background-color: #2e17ff"
+        class="show-45"id="show">Montepulciano</div>
+        <dialog class="montepulciano"id="options">
+
+    <button class='hide-45'id="hide" style="background-color: #2e17ff">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Montepulciano 175ml" 
+        data-price="6.25">175ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Montepulciano 250ml" 
+        data-price="8.75">250ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Montepulciano Bottle" 
+        data-price="25.95">Bottle
+    </button>
+        </dialog>
+
+        <div style="background-color: #2e17ff"
+        class="show-46"id="show">Primitivo</div>
+        <dialog class="primitivo"id="options">
+
+    <button class='hide-46'id="hide" style="background-color: #2e17ff">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Primitivo 175ml" 
+        data-price="7.25">175ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Primitivo 250ml" 
+        data-price="10.75">250ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Primitivo Bottle" 
+        data-price="30.95">Bottle
+    </button>
+        </dialog>
+
+    <button 
+        class="btn food-item"
+        type="button" 
+        style="background-color: #2e17ff"
+        data-title="Chianti Bottle" 
+        data-price="48.95">Chianti Bottle
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="D'abruzzo Bottle" 
+        data-price="37.95">D'abruzzo Bottle
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Malbec Bottle" 
+        data-price="37.95">Malbec Bottle
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #2e17ff"
+        data-title="Talenti Bottle" 
+        data-price="69.95">Talenti Bottle
+    </button>
+   
+</div>
+    </dialog>
+
+    <div style="background-color: #ff8b07"
+  class="show-47"id="show">Rose Wine</div>
+  <dialog class="roseWine"id="smallFrame">
+
+    <button class='hide-47'id="hide" style="background-color: #ff8b07" >Close</button>
+
+    <div class="rose-wine"id="subject">
+
+        <div style="background-color: #ff8b07"
+        class="show-48"id="show">Pg Rose</div>
+        <dialog class="pgRose"id="options">
+
+    <button class='hide-48'id="hide" style="background-color: #ff8b07" >Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #ff8b07" 
+        data-title="PG Rose 175ml" 
+        data-price="6.45">175ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"   
+        style="background-color: #ff8b07" 
+        data-title="PG Rose 250ml"
+        data-price="8.45">250ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"  
+        style="background-color: #ff8b07"
+        data-title="PG Rose Bottle" 
+        data-price="24.95">Bottle
+    </button>
+        </dialog>
+
+        <div style="background-color: #ff8b07"
+        class="show-49"id="show">Luigi Doc</div>
+        <dialog class="luigiD"id="options">
+
+    <button class='hide-49'id="hide" style="background-color: #ff8b07" >Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #ff8b07" 
+        data-title="Luigi Doc 175ml" 
+        data-price="7.95">175ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #ff8b07" 
+        data-title="Luigi Doc 250ml"
+        data-price="11.25">250ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"   
+        style="background-color: #ff8b07"
+        data-title="Luigi Doc Bottle" 
+        data-price="32.95">Bottle
+    </button>
+        </dialog>
+        
+        <div style="background-color: #ff8b07"
+        class="show-50"id="show">Marotti Rose</div>
+        <dialog class="marottiR"id="options">
+
+    <button class='hide-50'id="hide" style="background-color: #ff8b07" >Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #ff8b07" 
+        data-title="Marotti Rose 175ml" 
+        data-price="6.95">175ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #ff8b07" 
+        data-title="Marotti Rose 250ml"
+        data-price="9.75">250ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"  
+        style="background-color: #ff8b07"
+        data-title="Marotti Rose Bottle" 
+        data-price="28.95">Bottle
+    </button>
+        </dialog>
+
+        <div style="background-color: #ff8b07"
+        class="show-51"id="show">Maison Rose</div>
+        <dialog class="maisonR"id="options">
+
+    <button class='hide-51'id="hide" style="background-color: #ff8b07" >Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #ff8b07" 
+        data-title="Maison Rose 175ml" 
+        data-price="11.45">175ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #ff8b07" 
+        data-title="Maison Rose 250ml"
+        data-price="16.45">250ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"  
+        style="background-color: #ff8b07"
+        data-title="Maison Rose Bottle" 
+        data-price="48.95">Bottle
+    </button>
+        </dialog>
+    
+    </div>
+  </dialog>
+ 
+<div style="background-color: #15b2ca"
+  class="show-52"id="show">Dessert Wine</div>
+  <dialog class="dessertWine" id="smallFrame">
+
+    <button class='hide-52'id="hide"  style="background-color: #15b2ca">Close</button>
+<div class="dessert-wine"id="subject">
+
+
+    <div style="background-color: #15b2ca"
+    class="show-53"id="show">Moscato</div>
+    <dialog class="moscato"id="options">
+
+<button class='hide-53'id="hide"  style="background-color: #15b2ca">Close</button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #15b2ca"
+        data-title="Moscato 100ml" 
+        data-price="6.45">100ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #15b2ca"
+        data-title="Moscato Bottle" 
+        data-price="23.95">Bottle
+    </button>
+    </dialog>
+
+    <div style="background-color: #15b2ca"
+    class="show-54"id="show">Rufina</div>
+    <dialog class="rufina"id="options">
+
+<button class='hide-54'id="hide"  style="background-color: #15b2ca">Close</button>
+    <button 
+        class="btn food-item"
+        type="button" 
+        style="background-color: #15b2ca"
+        data-title="Rufina 100ml" 
+        data-price="9.95">100ml
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #15b2ca"
+        data-title="Rufina Bottle" 
+        data-price="35.95">Bottle
+    </button>
+
+    </div>
+    </dialog>
+
+   
+  <div style="background-color: #313531"
+  class="show-55"id="show">Beer & Cider</div>
+  <dialog class="beerCider"id="smallFrame">
+
+    <button class='hide-55'id="hide" style="background-color: #313531">Close</button>
+    <div class="beer-cider"id="subject">
+
+        <div style="background-color: #313531"
+    class="show-56"id="show">Menabrea</div>
+    <dialog class="menabrea"id="options">
+
+<button class='hide-56'id="hide" style="background-color: #313531">Close</button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #313531"
+        data-title="Menabrea Half-Pint" 
+        data-price="2.89">Half-Pint
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #313531"
+        data-title="Menabrea Pint" 
+        data-price="5.75">Pint
+    </button>
+    </dialog>
+
+    <div style="background-color: #313531"
+    class="show-57"id="show">Seven Peaks</div>
+    <dialog class="sevenPeaks"id="options">
+
+<button class='hide-57'id="hide" style="background-color: #313531">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #313531"
+        data-title="Seven Peaks Half-Pint" 
+        data-price="2.75">Half-Pint
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #313531"
+        data-title="Seven Peaks Pint" 
+        data-price="5.49">Pint
+    </button>
+    </dialog>
+
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #313531"
+        data-title="Menabrea Blonde" 
+        data-price="5.25">Menabrea Blonde
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #313531"
+        data-title="Menabrea Amber" 
+        data-price="5.25">Menabrea Amber
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"  
+        style="background-color: #313531"
+        data-title="Modelo" 
+        data-price="4.95">Modelo
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #313531"
+        data-title="Drygate IPA" 
+        data-price="5.25">Drygate IPA
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #313531"
+        data-title="Drygate Pilsner" 
+        data-price="5.25">Drygate Pilsner
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #313531"
+        data-title="Vocation IPA" 
+        data-price="5.25">Vocation IPA
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #313531"
+        data-title="Menabrea Zero" 
+        data-price="4.45">Menabrea Zero
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #313531"
+        data-title="Lucky Saint" 
+        data-price="4.75">Lucky Saint
+    </button>       
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #313531"
+        data-title="Thornbridge IPA" 
+        data-price="5.25">Thornbridge IPA
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #313531"
+        data-title="Angio Cider" 
+        data-price="6.15">Angio Cider
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #313531"
+        data-title="Angio Rose Cider" 
+        data-price="6.15">Angio Rose Cider
+    </button>       
+
+    </div>
+  </dialog>
+  
+
+  <div style="background-color: #f5e60c"
+  class="show-58"id="show">Soft Drinks</div>
+  <dialog class="softDrinks"id="smallFrame">
+
+    <button class='hide-58'id="hide"  style="background-color: #f5e60c">Close</button>
+<div class="soft-drinks"id="subject">
+
+    <div style="background-color: #f5e60c"
+    class="show-59"id="show">Pepsi</div>
+    <dialog class="pepsi"id="options">
+
+<button class='hide-59'id="hide"  style="background-color: #f5e60c">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f5e60c"
+        data-title="Pepsi Half-Pint" 
+        data-price="2.25">Half-Pint
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f5e60c"
+        data-title="Pepsi Pint" 
+        data-price="4.49">Pint
+    </button>
+    </dialog>
+
+    <div style="background-color: #f5e60c"
+    class="show-60"id="show">Pepsi Max</div>
+    <dialog class="pepsiMax"id="options">
+
+<button class='hide-60'id="hide" style="background-color: #f5e60c">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f5e60c"
+        data-title="Pepsi-Max Half-Pint" 
+        data-price="2.25">Half-Pint
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f5e60c"
+        data-title="Pepsi-Max Pint" 
+        data-price="4.49">Pint
+    </button>
+    </dialog>
+
+    <div style="background-color: #f5e60c"
+    class="show-61"id="show">Lemonade</div>
+    <dialog class="lemonade"id="options">
+
+<button class='hide-61'id="hide"  style="background-color: #f5e60c">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f5e60c"
+        data-title="Lemonade Half-Pint" 
+        data-price="2.25">Half-Pint
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f5e60c"
+        data-title="Lemonade Pint" 
+        data-price="4.49">Pint
+    </button>
+    </dialog>
+
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f5e60c"
+        data-title="Irn-Bru" 
+        data-price="2.95">Irn-Bru
+    </button>
+
+    <div style="background-color: #f5e60c"
+    class="show-62"id="show">Still Water</div>
+    <dialog class="stillWater"id="options">
+
+<button class='hide-62'id="hide"  style="background-color: #f5e60c">Close</button>
+    <button 
+        class="btn food-item"
+        type="button" 
+        style="background-color: #f5e60c"
+        data-title="Small Still" 
+        data-price="2.95">Small
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f5e60c"
+        data-title="Large Still" 
+        data-price="3.95">Large
+    </button>
+    </dialog>
+
+    <div style="background-color: #f5e60c"
+    class="show-63"id="show">Sparkling Water</div>
+    <dialog class="sparkWater"id="options">
+
+<button class='hide-63'id="hide"  style="background-color: #f5e60c">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f5e60c"
+        data-title="Small Sparkling" 
+        data-price="2.95">Small 
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f5e60c"
+        data-title="Large Sparkling" 
+        data-price="3.95">Large 
+    </button>
+    </dialog>
+
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f5e60c"
+        data-title="Jug Tap Water" 
+        data-price="0">Jug Tap Water
+    </button>
+
+    <div style="background-color: #f5e60c"
+    class="show-64"id="show">Orange Juice</div>
+    <dialog class="oj"id="options">
+
+<button class='hide-64'id="hide" style="background-color: #f5e60c" >Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f5e60c"
+        data-title="Small OJ" 
+        data-price="2.35">Small
+    </button>
+    <button 
+        class="btn food-item"
+        type="button" 
+        style="background-color: #f5e60c"
+        data-title="Large OJ" 
+        data-price="4.25">Large
+    </button>
+    </dialog>
+
+    <div style="background-color: #f5e60c"
+    class="show-65"id="show">Apple Juice</div>
+    <dialog class="appleJuice"id="options">
+
+<button class='hide-65'id="hide" style="background-color: #f5e60c">Close</button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f5e60c"
+        data-title="Small Apple Juice" 
+        data-price="2.35">Small
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #f5e60c"
+        data-title="Large Sparkling" 
+        data-price="4.25">Large
+    </button>
+    </dialog>
+
+    </div>
+    </dialog>
+    
+
+    <div style="background-color: #dc185d"
+  class="show-66"id="show">Hot Drinks</div>
+  <dialog class="hotDrinks"id="smallFrame">
+
+    <button class='hide-66'id="hide" style="background-color: #dc185d">Close</button>
+<div class="hot-drinks"id="subject">
+
+    <div style="background-color: #dc185d"
+    class="show-67"id="show">Coffee</div>
+    <dialog class="coffee"id="options">
+    
+<button class='hide-67'id="hide" style="background-color: #dc185d">Close</button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Espresso" 
+        data-price="2.95">Espresso
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Macchiato" 
+        data-price="2.95">Macchiato
+    </button>
+    <button
+        class="btn food-item"
+        type="button" 
+        style="background-color: #dc185d"
+        data-title="Flat White" 
+        data-price="3.45">Flat White
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Americano" 
+        data-price="2.95">Americano
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Cappucino" 
+        data-price="3.45">Cappucino
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Cafe Latte" 
+        data-price="3.45">Cafe Latte
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Iced Latte" 
+        data-price="3.45">Iced Latte
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Mocha" 
+        data-price="3.45">Mocha
+    </button>
+</dialog>
+
+<div style="background-color: #dc185d"
+    class="show-68"id="show">Liquer Coffee</div>
+    <dialog class="liquerCoffee"id="options">
+    
+<button class='hide-68'id="hide" style="background-color: #dc185d">Close</button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Baileys Coffee" 
+        data-price="5.25">Baileys 
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Irish Coffee" 
+        data-price="5.25">Irish 
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Calypso Coffee" 
+        data-price="5.25">Calypso
+    </button>
+    <button
+        class="btn food-item"
+        type="button" 
+        style="background-color: #dc185d"
+        data-title="Drambuie Coffee" 
+        data-price="5.25">Drambuie
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Brandy Coffee" 
+        data-price="5.25">Brandy 
+    </button>
+    </dialog>
+
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Hot Chocolate" 
+        data-price="3.95">Hot Chocolate
+    </button>
+
+    <div style="background-color: #dc185d"
+    class="show-69"id="show">Tea</div>
+    <dialog class="tea"id="options">
+    
+<button class='hide-69'id="hide" style="background-color: #dc185d">Close</button>
+    <button 
+        class="btn food-item"
+        type="button" 
+        style="background-color: #dc185d"
+        data-title="Breakfast Tea" 
+        data-price="2.95">Breakfast 
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Earl Grey Tea" 
+        data-price="2.95">Grey
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Peppermint Tea"
+        data-price="2.95">Peppermint 
+    </button>
+    <button  
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Green Tea" 
+        data-price="2.95">Green 
+    </button>
+    <button
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Chamomile Tea" 
+        data-price="2.95">Chamomile 
+    </button>
+    <button 
+        class="btn food-item"
+        type="button"
+        style="background-color: #dc185d"
+        data-title="Lemon Tea" 
+        data-price="2.95">Lemon 
+    </button>
+    </button>
+    </dialog>
+
+</div>
+  </dialog>
+            
+    
+            
+    
+  
+</div>
+          
+
+
+
+
+
+
+
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+        
+        <script src="index.js"></script>
+</body>
+</html>
